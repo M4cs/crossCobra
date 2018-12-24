@@ -39,6 +39,9 @@ class Configuration():
     def getFont(self):
         return self.config['Font']['font']
     
+    def getFontFamily(self):
+        return self.config['Font']['family']
+
     def setSystem(self, system):
         self.config['System']['system'] = system
 
@@ -85,7 +88,7 @@ class Configuration():
         
         config['Font'] = {}
         config['Font']['font'] = '13'
-        
+        config['Font']['family'] = 'Courier New'
         return config
 
 

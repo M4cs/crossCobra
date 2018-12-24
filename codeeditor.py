@@ -68,7 +68,7 @@ class CodeEditor(QsciScintilla):
 
         # Set the default font
         self.font = QFont()
-        self.font.setFamily('Mono')
+        self.font.setFamily(c.getFontFamily())
         self.font.setFixedPitch(True)
         self.font.setPointSize(self.pointSize)
         self.setFont(self.font)
@@ -427,7 +427,7 @@ class CodeEditor(QsciScintilla):
     def setPythonPrintStyle(self):
         # Set None lexer
         self.font = QFont()
-        self.font.setFamily('Mono')
+        self.font.setFamily(c.getFontFamily())
         self.font.setFixedPitch(True)
         self.font.setPointSize(10)
         self.setFont(self.font)
@@ -482,7 +482,7 @@ class CodeEditor(QsciScintilla):
     def resetPythonPrintStyle(self, lexer):
         
         self.font = QFont()
-        self.font.setFamily('Mono')
+        self.font.setFamily(c.getFontFamily())
         self.font.setFixedPitch(True)
         self.font.setPointSize(self.pointSize)
         self.setFont(self.font)
